@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Dropdown</title>
+
+    <meta charset="utf8" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/dropdown.css" />
+
+    <style type="text/css">
+      .dropdown-toggle .demo-img {
+        margin: -10px 0 -10px -20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <article id="demo-3">
+          <header>
+            <h4>Assignment-03</h4>
+          </header>
+          <section>
+            <select data-dropdown='{ "closeReset": false }'>
+              <optgroup label="Dhaka">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+                <option>Option 2.3</option>
+              </optgroup>
+              <optgroup label="Chittagong">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+                <option>Option 2.3</option>
+              </optgroup>
+              <optgroup label="Barishal">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+              <optgroup label="Rajsahi">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+              <optgroup label="Rangpur">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+              <optgroup label="khulna">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+              <optgroup label="Mymensingh">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+              <optgroup label="Sylhet">
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+              </optgroup>
+            </select>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.dropdown.js"></script>
+    <script type="text/javascript">
+      (function ($) {
+        $(function () {
+          $("select, ul").dropdown();
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>
